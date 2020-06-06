@@ -125,6 +125,7 @@ case $1 in
 		tail_file $*
 		;;
 	b|bal)
+		shift
 		hledger -f "${TIME_FILE_FORMATTED}" bal "$@"
 		;;
 	wb|wbal)
